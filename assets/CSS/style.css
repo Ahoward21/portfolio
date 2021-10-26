@@ -1,0 +1,10 @@
+.hero {
+    background-image: url(./assets/images/placeholder.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
