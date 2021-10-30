@@ -49,13 +49,15 @@ header nav ul li {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
+    height: 150px;
 
 }
 
 .section-title {
     font-size: 36px;
-    display: flex;
+    display: fixed;
     padding-left: 10px;
+    text-align: justify;
        
 
 }
@@ -81,27 +83,94 @@ header nav ul li {
     align-items: center;
 }
 
-.work {
-    width: 100%;
+.work {   
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 15px;
-    
+    width: 100%;
+    align-items: center;
+     
 }
 
-.work img{
-    width: 200px;
-    height: 200px;
+.websites {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0  auto;
+    width: 80%;
+    padding: 10px;
+}
 
+.work h2 {
+    display: flex;
+    }
+
+
+.websites .run-buddy a {
+    background-color: red;
+}
+
+.websites .run-buddy:hover a {
+    background-color: green;
+}
+
+.websites .run-buddy:hover {
+    border-color: yellow;
+}
+
+.websites .run-buddy {   
+    width: 100%;
+    display: flex;    
+    background-image: url(../images/runbuddy.png);
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    margin: 5px;
+    border: grey 5px solid;
+
+}
+
+
+.websites .desertreef {
+    background-image: url(../images/desertreef.img);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    height: 300px;
+    margin: 5px;
+    border: grey 5px solid;
+  
+
+}
+
+.websites .place-holder {
+    background-image: url(../images/placeholder.jpg);
+    background-size: cover;
+    display: flex;    
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    margin: 5px;
+    border: grey 5px solid;  
 }
 
 
 
 .contact {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
     align-items: center;
     padding: 15px;
-        
+    justify-content: space-between;
+    align-content: center;
+         
 }
+
+.contact:hover .phone {
+    background-color: red;
+}
+
