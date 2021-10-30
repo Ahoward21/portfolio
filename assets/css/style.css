@@ -1,3 +1,13 @@
+:root {
+    --primary-color: grey;
+    --secdary-color: lightblue;
+
+}
+body {
+    margin: auto;
+}
+/* Header Start */ 
+
 header {
     padding: 20px 35px;
     display: flex;
@@ -15,13 +25,14 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;   
+    font-size: 42px;   
     color: rgb(250, 252, 221); 
 }
 
 header a {
     text-decoration: none;
     color: rgb(250, 252, 221);
+    font-size: 20px;
 }
 
 header nav {
@@ -34,11 +45,13 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    
 }
 
 header nav ul li {
     padding: 10px;
 }
+/* Header End */
 
 .hero {
     background-image: url(../images/hero.img.jpg);
@@ -49,7 +62,7 @@ header nav ul li {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
-    height: 150px;
+    height: 100px;
 
 }
 
@@ -62,10 +75,13 @@ header nav ul li {
 
 }
 
+/* About Me Start */
+
 .info {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 15px;
     align-items: center;
     
@@ -79,9 +95,14 @@ header nav ul li {
 
 .info p {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
+/* About Me End */
+
+/* Work Start */
 
 .work {   
     display: flex;
@@ -106,17 +127,9 @@ header nav ul li {
     }
 
 
-.websites .run-buddy a {
-    background-color: red;
-}
 
-.websites .run-buddy:hover a {
-    background-color: green;
-}
 
-.websites .run-buddy:hover {
-    border-color: yellow;
-}
+
 
 .websites .run-buddy {   
     width: 100%;
@@ -127,7 +140,7 @@ header nav ul li {
     flex-direction: column;
     height: 500px;
     margin: 5px;
-    border: grey 5px solid;
+    border: var(--primary-color) 5px solid;
 
 }
 
@@ -138,10 +151,10 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    justify-content: center;
+    align-items: end;
     height: 300px;
     margin: 5px;
-    border: grey 5px solid;
+    border: var(--primary-color) 5px solid;
   
 
 }
@@ -152,12 +165,15 @@ header nav ul li {
     display: flex;    
     flex-wrap: wrap;
     flex: 1;
-    justify-content: center;
+    align-items: end;
+    height: 300px;
     margin: 5px;
-    border: grey 5px solid;  
+    border: var(--primary-color) 5px solid;  
 }
 
+/* Work End */
 
+/* Contact Me Start */
 
 .contact {
     display: flex;
@@ -169,8 +185,74 @@ header nav ul li {
     align-content: center;
          
 }
-
-.contact:hover .phone {
-    background-color: red;
+.contact a {
+    color: black;
+    font: 30px bold;
+    text-decoration: none;
 }
 
+/* Contact Me End */
+
+/* Hover start */
+
+.websites .run-buddy:hover a {
+    background-color: var(--secdary-color);
+    color: var(--primary-color);
+}
+
+.websites .run-buddy:hover {
+    border-color: var(--secdary-color);
+}
+
+.websites .desertreef:hover {
+    border-color: var(--secdary-color);
+}
+
+.websites .desertreef:hover h3 {
+    background-color: var(--secdary-color);
+    color: var(--primary-color);
+}
+
+.websites .place-holder:hover {
+    border-color: var(--secdary-color);
+}
+
+.websites .place-holder:hover h3 {
+    background-color: var(--secdary-color);
+    color: var(--primary-color);
+}
+
+.phone:hover {
+    background-color: var(--secdary-color);
+    color: var(--primary-color);
+}
+
+.email:hover {
+    color: var(--primary-color);
+    background-color: lightblue;
+}
+
+.git:hover {
+    background-color: var(--secdary-color);
+    color: var(--primary-color);
+}
+
+/* Hover End */
+
+/* Media Querys */
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 575px) {
+    
+}
