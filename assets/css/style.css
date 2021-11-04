@@ -72,8 +72,7 @@ header nav ul li {
     flex: 0 0 14%;
     padding: 0 10px; 
     text-align: justify;
-    border-right: 5px solid var(--primary-color);    
-
+    border-right: 5px solid var(--primary-color)
 
 }
 
@@ -175,7 +174,7 @@ main {
     align-items: center;
 }
 .contact a {
-    color: black;
+    color: var(--primary-color);
     font: 30px bold;
     text-decoration: none;
     
@@ -186,46 +185,30 @@ main {
 
 /* Hover start */
 
-.websites .run-buddy:hover a {
-    background-color: var(--secdary-color);
-    color: var(--primary-color);
-}
 
-.websites .run-buddy:hover {
-    border-color: var(--secdary-color);
+.run-buddy:hover {
+    border-color: var(--secondary-color);
 }
 
 .websites .desertreef:hover {
-    border-color: var(--secdary-color);
-}
-
-.websites .desertreef:hover h3 {
-    background-color: var(--secdary-color);
-    color: var(--primary-color);
+    border-color: var(--secondary-color);
 }
 
 .websites .place-holder:hover {
-    border-color: var(--secdary-color);
-}
-
-.websites .place-holder:hover h3 {
-    background-color: var(--secdary-color);
-    color: var(--primary-color);
+    border-color: var(--secondary-color);
 }
 
 .phone:hover {
-    background-color: var(--secdary-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .email:hover {
-    color: var(--primary-color);
-    background-color: lightblue;
+    background-color: var(--secondary-color);
 }
 
 .git:hover {
-    background-color: var(--secdary-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
 }
 
 /* Hover End */
