@@ -1,6 +1,6 @@
 :root {
     --primary-color: grey;
-    --secdary-color: lightblue;
+    --secondary-color: lightblue;
 
 }
 body {
@@ -68,23 +68,30 @@ header nav ul li {
 
 .section-title {
     font-size: 36px;
-    display: fixed;
-    padding-left: 10px;
+    /* display: fixed; */
+    flex: 0 0 14%;
+    padding: 0 10px; 
     text-align: justify;
-       
+    border-right: 5px solid var(--primary-color);    
+
 
 }
 
 /* About Me Start */
+main {
+    max-width: 88%;
+    margin: auto;
 
-.info {
+}
+
+.titles {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
-    align-items: center;
-    
+    align-items: stretch;
+    flex-direction: row;
 
 }
 
@@ -98,21 +105,15 @@ header nav ul li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100px;
 }
+
+
 
 /* About Me End */
 
 /* Work Start */
-
-.work {   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 15px;
-    width: 100%;
-    align-items: center;
-     
-}
+ 
 
 .websites {
     display: flex;
@@ -127,14 +128,10 @@ header nav ul li {
     }
 
 
-
-
-
-
-.websites .run-buddy {   
+.run-buddy {   
     width: 100%;
     display: flex;    
-    background-image: url(../images/runbuddy.png);
+    background-image: url("../images/runbuddy.png");
     background-size: cover;
     justify-content: center;
     flex-direction: column;
@@ -145,50 +142,44 @@ header nav ul li {
 }
 
 
-.websites .desertreef {
-    background-image: url(../images/desertreef.img);
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    align-items: end;
-    height: 300px;
-    margin: 5px;
-    border: var(--primary-color) 5px solid;
-  
-
+.desertreef {
+    background-image: url("../images/desertreef.img");
 }
 
-.websites .place-holder {
-    background-image: url(../images/placeholder.jpg);
+.website {
     background-size: cover;
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     flex: 1;
     align-items: end;
     height: 300px;
     margin: 5px;
     border: var(--primary-color) 5px solid;  
+
+}
+
+.place-holder {
+    background-image: url("../images/placeholder.jpg");
+
 }
 
 /* Work End */
 
 /* Contact Me Start */
 
-.contact {
+
+
+.contact div {
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    align-items: center;
-    padding: 15px;
     justify-content: space-between;
-    align-content: center;
-         
+    align-items: center;
 }
 .contact a {
     color: black;
     font: 30px bold;
     text-decoration: none;
+    
+
 }
 
 /* Contact Me End */
