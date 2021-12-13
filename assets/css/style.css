@@ -126,6 +126,18 @@ main {
     display: flex;
     }
 
+    .pokemon {   
+        width: 100%;
+        display: flex;    
+        background-image: url("../images/poke-find-home.png");
+        background-size: cover;
+        justify-content: center;
+        flex-direction: column;
+        height: 500px;
+        margin: 5px;
+        border: var(--primary-color) 5px solid;
+    
+    }
 
 .run-buddy {   
     width: 100%;
